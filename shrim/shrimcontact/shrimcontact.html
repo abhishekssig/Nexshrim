@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\favcon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\favcon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\favcon.png">
+</head>
+<body>
+    <div id="nav">
+        <div id="nav-part1">
+          <img class="twogoodlogo" width="150" height="58" viewBox="0 0 106 83" fill="none" src="assets\SHRIM.png" alt="">
+          
+            
+                       
+               
+        </div>
+        <div id="nav-part2">
+            <div id="links">
+                <a href="/shrim/index.html">Shrim</a>
+                <a href="/shrim/workshrim/shrimwork.html">Work</a>
+                <a href="/shrim/shrimcontact/shrimcontact.html">Contact Shrim</a>
+                <a href="/shrim/05-comming-soon/05-comming-soon.html">Ridesense</a>
+                
+            </div>
+            <!-- <div id="icons">
+                <i class="ri-menu-fill"></i>                
+            </div> -->
+            <div class="togglebtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdownmenu">
+        <ul>
+            <li><a href="#" id="ddlinks">Shrim</a></li>
+            <li><a href="#" id="ddlinks">Work</a></li>
+            <li><a href="#" id="ddlinks">Contact Shrim</a></li>
+            <li><a href="#" id="ddlinks">Visit Vijas</a></li>
+        
+        </ul>
+    </div>
+    <div id="cursor"></div>
+    <div id="main">
+        <section class="contact">
+            <div class="container">
+              <!------  Left SIDE  ------>
+              <div class="left">
+                <div class="form-wrapper">
+                  <div class="contact-heading">
+                    <h1>Let's Build Together<span>.</span></h1>
+                    <p class="text">
+                      Or Reach Us via :
+                      <a href="mailto:Vijas@email.com">work.shrim@gmail.com</a>
+                    </p>
+                  </div>
+    
+                  <form action="index.html" method="post" id="myForm" class="contact-form">
+                    <div class="input-wrap">
+                      <input
+                        class="contact-input"
+                        autocomplete="off"
+                        id="First_Name"
+                        name="First Name"
+                        type="text"
+                        required/>
+                      <label>First Name</label>
+                      <i class="icon fa-solid fa-address-card"></i>
+                    </div>
+    
+                    <div class="input-wrap">
+                      <input
+                        class="contact-input"
+                        id="Last_Name"
+                        autocomplete="off"
+                        name="Last Name"
+                        type="text"
+                        required
+                      />
+                      <label>Last Name</label>
+                      <i class="icon fa-solid fa-address-card"></i>
+                    </div>
+    
+                    <div class="input-wrap w-100">
+                      <input
+                        class="contact-input"
+                        id="email"
+                        autocomplete="off"
+                        name="Email"
+                        type="email"
+                        required
+                      />
+                      <label>Email</label>
+                      <i class="icon fa-solid fa-envelope"></i>
+                    </div>
+    
+                    <div class="input-wrap textarea w-100">
+                      <textarea
+                        name="Message"
+                        auto-complete="off"
+                        id="message"
+                        class="contact-input"
+                        required></textarea>
+                      <label>Message</label>
+                      <i class="icon fa-solid fa-inbox"></i>
+                    </div>
+    
+                    <div class="contact-buttons">
+                      <!-- <button class="btn upload">
+                        <span>
+                          <i class="fa-solid fa-paperclip"></i> Add Attachment
+                        </span>
+                        <input type="file" id="attachment" name="Attachment" />
+                      </button> -->
+                      <input type="submit"  id="signupbtn"value="Send message" class="btn" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+    
+              <!-------  Right SIDE  ------>
+              <div class="right">
+                <!-- Image background -->
+                <div class="image-wrapper">
+                  <video class="video"  src="assets/v3.mp4" autoplay muted loop></video>
+                  <!-- Waves 1-->
+                  <div class="wave-wrap">
+                    <svg
+                      class="wave"
+                      viewBox="0 0 783 1536"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="wave"
+                        d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z"
+                      />
+                    </svg>
+                  </div>
+                  <!-- Waves 2-->
+                  <svg
+                    class="dashed-wave"
+                    viewBox="0 0 345 877"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      id="dashed-wave"
+                      d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5 499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5 125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                  </svg>
+                </div>
+    
+    
+              </div>
+          </div>
+        
+          </section>
+           <section class="location-map">
+           <div class="location">
+           
+            <div class="contact-map" >
+              
+              <a href="https://maps.app.goo.gl/ReVkacMET8hPRUmS6" target="_blank"><img src="assets/map2.jpeg" alt="" height="100vh" width="100%"></a>
+          </div>
+          
+            <div class="contact-content">
+              
+              
+              <h1>Our Location</h1>
+             
+              <h4>Contact No: </h4>
+              <h4>+91 62320 75690</h4>
+              <h4>(11:00 AM - 5:00 PM)</h4>
+              <h4>MON-FRI</h4>
+              <h4>work.shrim@gmail.com</h4>
+              <h4>Address: House No.1001 , Kripal nagar, Bhilai(CG) 490023</h4>
+            </div>
+    
+           </div>
+          </section>
+        <section id="pagef" class="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <img src="assets/svgl.png" alt=""  height="100">
+                <img src="assets/shrimwhite.png" alt="" height="100">
+              </div>
+              <div class="footer-col">
+                
+                <h4>Vijas</h4>
+                <ul class="links">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../products/product.html">Products</a></li>
+                  <li><a href="../about/about.html">About Us</a></li>
+                  <li><a href="../vijasCONTACT/index.html">Contact Us</a></li>
+                  <li><a href="../shrim/shrim.html">Shrim Technology</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Shrim Technology</h4>
+                <ul class="links">
+                  <li><a href="../shrim/shrim.html">SHRIM HOME</a></li>
+                  <li><a href="../workshrim/shrimwork.html">WORKS</a></li>
+                  <li><a href="/shrimcontact/shrimcontact.html">CONTACT SHRIM</a></li>
+                  <li><a href="../index.html"> VISIT VIJAS</a></li>
+                
+                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                  <li><a href="#">Customer Agreement</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">GDPR</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Media Kit</a></li>
+                </ul>
+              </div> -->
+              <div class="footer-col">
+                <h4>
+                  Contact Information
+                </h4>
+                <br>
+                <h4> Address</h4>
+                <p>
+                 House No.1001 , Kripal nagar, Bhilai(CG) 490023
+                </p>
+                <h4>Reach Us here</h4>
+                <p>
+                  +91 62320 75690 <br>
+                  
+                +91 96850 75690 <BR>
+                  work.shrim@gmail.com
+                </p>
+                <!-- <form action="#">
+                  <input type="text" placeholder="Your email" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form> -->
+                <!-- <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-github"></i> -->
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <!-- <script>
+        const toggleBtn = document.querySelector('.togglebtn')
+        const toggleBtnIcon = document.querySelector('.togglebtn i')
+        const dropDownMenu = document.querySelector('.dropdownmenu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }        
+    </script>   -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const submitBtn = document.querySelector('#signupbtn');
+            submitBtn.addEventListener("click", submitForm);
+        });
+    
+        async function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            try {
+                const First_Name = document.getElementById('First_Name').value;
+                const Last_Name = document.getElementById('Last_Name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+    
+                // Send form data to the server
+                const formData = new FormData();
+                formData.append('First_Name', First_Name);
+                formData.append('Last_Name', Last_Name);
+                formData.append('email', email);
+                formData.append('message', message);
+    
+                const response = await fetch('https://sheetdb.io/api/v1/4neth0jzspodc', {
+                    method: "POST",
+                    body: formData,
+                });
+    
+                if (!response.ok) {
+                    throw new Error("Failed to submit form.");
+                }
+    
+                // Construct email content with form data
+                const emailContent = `
+                    Name: ${First_Name}
+                    Email: ${email}
+                    Message: ${message}
+                `;
+    
+                // Send confirmation email to the user
+                const dynamicContent = {
+                    from_name: First_Name,
+                    reply_to: "shrim.work@gmail.com",
+                    email:email,
+                    message: message
+                };
+    
+                const emailResponse1 = await emailjs.send("service_twkz6uu", "template_bch7rxk", dynamicContent, "AT2ejBmhqoXXy8SYa");
+                console.log("Email sent to user successfully:", emailResponse1);
+
+    
+
+
+
+
+                // Send confirmation email to the user
+                // const dynamicContent = {
+                //     from_name: First_Name,
+                //     reply_to: "shrim.work@gmail.com",
+                //     email:email,
+                //     message: message
+                // };
+
+
+
+                // Send another email with form data to a different recipient
+            //     const hardcodedContent = {
+            //     from_name: name,
+            //     reply_to: email,
+            //     message: emailContent // Include form data in the email content
+            // };
+
+            // const emailResponse2 = await emailjs.send("service_hkidu99", "template_j2fwkfl", hardcodedContent, "wHyh5XQipBHTyEAvk");
+            // console.log("Second email sent successfully:", emailResponse2);
+    
+                // Reset form fields after successful submission
+                document.getElementById('First_Name').value = '';
+                document.getElementById('Last_Name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+    
+                alert("Form submitted successfully!");
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Failed to submit form. Please try again later.");
+            }
+        }
+    </script>
+  
+  
+    
+  
+      
+    
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
+<!-- 
+  <script>
+    // Initialize the map when the Google Maps JavaScript API is loaded
+    function initMap() {
+      // Specify the coordinates for the center of the map
+      var myLatLng = { lat: 22.7652336, lng: 75.88531104999997 };
+
+      // Create a map object and specify the DOM element for display
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 15 // Adjust the zoom level as needed
+      });
+
+      // Create a marker and set its position
+      var marker = new google.maps.Marker({
+        map: map,
+        position: myLatLng,
+        title: 'Scheme Number 78, Vijay Nagar, Indore, Madhya Pradesh 452010' // Add a title for the marker
+      });
+    }
+  </script> -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '65d73ad97f114426f71797f6' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script><script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '65d73ad97f114426f71797f6' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+  
+</body>
+</html>
