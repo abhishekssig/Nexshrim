@@ -58,6 +58,9 @@ function loaderAnimation() {
 }
 
 
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show-menu");
+}
 
 
 
