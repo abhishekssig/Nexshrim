@@ -1,269 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
 
-  <title>Teaser</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script>
+        (function(){
+            emailjs.init("iWGLpZZsAj-s6VMuc");
+        })();
+    </script>
 
+    <style>
+        /* Full-Screen Background */
+  
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        /* Main Container */
+.parent-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+/* Main Container */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    position: relative;
+}
+
+/* Contact Form Container */
+.contact-container {
+    flex: 1;
+    width: 50%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* Service Options Grid */
+.service-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service-option {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 50px;
+}
+
+.service-option:hover {
+    background: #f0f0f0;
+}
+
+.service-option.selected {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Video Container */
+.video-container {
+    flex: 1;
+    width: 50%;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Tablet (Move Video to Bottom) */
+/* Tablet (Full Visibility Adjustments) */
+@media (max-width: 768px) {
+    .parent-container{
+        height: auto; /* Allow content to expand beyond viewport */
+        padding: 20px 0; /* Add some vertical spacing */
+    }
+
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px; /* Constrain width for better readability */
+        padding: 20px;
+        margin: 0 auto; /* Center container */
+        box-sizing: border-box;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px; /* Space between form and video */
+    }
+
+    .video-container {
+        width: 100%;
+        height: auto; /* Let height adjust naturally */
+        min-height: 300px; /* Ensure minimum visibility */
+        order: 2;
+    }
+
+    .video-container video {
+        object-fit: contain; /* Show full video without cropping */
+        border-radius: 8px;
+    }
+
+    .service-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Improve form element spacing */
+    input, textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    button {
+        padding: 12px;
+    }
+}
+/* Mobile (Make Video Background) */
+@media (max-width: 576px) {
+    .parent-container{
+        padding: 15px;
+        background: white;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 20px;
+        background: white;
+        backdrop-filter: blur(10px);
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .video-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .service-options {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .service-option {
+        padding: 10px;
+        min-height: 40px;
+    }
+
+    input, textarea, button {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+</style>
 </head>
+<body>
+    <div class="main-container">
+        <!-- Contact Form Section -->
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
 
-<body class="sub_page">
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
-          </a>
-          <div class="navbar-collapse" id="">
-            <ul class="navbar-nav justify-content-between ">
-              <div class="User_option">
-                <li class="">
-                  <a class="mr-4" href="">
-                    Login
-                  </a>
-                  <a class="" href="">
-                    Sign up
-                  </a>
-                </li>
-              </div>
-            </ul>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
 
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1">
+                <div class="form-group">
+                    <label>Select Service</label>
+                    <div class="service-options">
+                        <div class="service-option" data-service="Web Development">Web Development</div>
+                        <div class="service-option" data-service="Drone View">Drone View</div>
+                        <div class="service-option" data-service="AR Building">AR Building</div>
+                        <div class="service-option" data-service="Doll House">Doll House</div>
+                        <div class="service-option" data-service="360 Room Tour">360 Room Tour</div>
+                        <div class="service-option" data-service="AR Video">AR Video</div>
+                    </div>
+                </div>
 
-                </span>
-                <span class="s-2">
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Please provide additional details about your project..." required></textarea>
+                </div>
 
-                </span>
-                <span class="s-3">
-
-                </span>
-              </button>
-            </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="house.html">HOUSE</a>
-                <a href="price.html">PRICING</a>
-                <a href="contact.html">CONTACT US</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding-top">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Get In Touch
-        </h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-5 ">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  Send
-                </button>
-              </div>
+                <button type="submit">Send Message</button>
             </form>
-          </div>
         </div>
 
-      </div>
+        <!-- Video Section -->
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="./images/3D Globe white bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
-  </section>
-
-  <!-- end contact section -->
-
-
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_contact">
-            <h5>
-              About Apartment
-            </h5>
-            <div>
-              <div class="img-box">
-                <img src="images/location.png" width="18px" alt="">
-              </div>
-              <p>
-                Address
-              </p>
-            </div>
-            <div>
-              <div class="img-box">
-                <img src="images/phone.png" width="12px" alt="">
-              </div>
-              <p>
-                +01 1234567890
-              </p>
-            </div>
-            <div>
-              <div class="img-box">
-                <img src="images/mail.png" width="18px" alt="">
-              </div>
-              <p>
-                demo@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_info">
-            <h5>
-              Information
-            </h5>
-            <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="info_links">
-            <h5>
-              Useful Link
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                  There are many
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  variations of
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  passages of
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Lorem Ipsum
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  available, but
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  the i
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_form ">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
-            <div class="social_box">
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section ">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </section>
-  <!-- end  footer section -->
-
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-
-</body>
 </body>
 </html>
